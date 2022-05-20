@@ -53,3 +53,23 @@ body {
     left: 0;
     transition: transform 0.4s;
 }
+
+.sckey__indicator {
+    width: 12px;
+    height: 12px;
+    background-color: var(--container-color-light);
+    border-radius: 50%;
+    margin: 0 0 0 24px;
+    transition: 0.4s;
+}
+
+
+/* ====================anime================================= */
+
+.sckey__input:checked~.sckey__rail .sckey__circle {
+    transform: translate(52px, -50%);
+}
+
+.sckey__input:checked~.sckey__indicator {
+    background-color: var(--indicator-color);
+}
